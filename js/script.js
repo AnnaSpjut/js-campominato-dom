@@ -1,6 +1,10 @@
 const container = document.querySelector('.container')
 const btnPlay = document.getElementById('play-btn')
 
+const boxNumbers = [100];
+let bombs = [];
+const qtyBombs = 16;
+
 btnPlay.addEventListener('click', init);
 
 
@@ -10,8 +14,24 @@ function init(){
   reset();
   for(let i = 1; i <= 100; i++){
     const box = getBox(i);
-    container.append(box)
+    container.append(box);
   }
+  bombs = generateBombs();
+  console.log(bombs);
+}
+
+
+
+function generateBombs(){
+
+const generatedBombs = [];
+while(generatedBombs.length < qtyBombs){
+  const bombId = Math.ceil(Math.random() * boxNumbers);
+  if (!generatedBombs.includes(bombId)){
+    generatedBombs.push(bombId)
+  }
+}
+return generatedBombs;
 }
 
 

@@ -11,3 +11,29 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
 
 ## Svoglimento
 
+1. creo array con 16 numeri random per generare le bombe 
+2. if per verificare se il click del box corrisponde con l'id della bomba (num) 
+3. 
+
+
+<!-- LOGICA VISTA IN CLASSE
+PLAY
+- leggo la proprietà della griglia (livello)
+- RESET
+- genero il playground
+- genero le bombe
+CLICK DELLA CELLA
+- verifico se è una bomba
+  SI -> FINE GIOCO
+  NO -> - coloro la cella
+        - incremento il contatore (se non è stata già cliccata)
+        - verifico se il punteggio è vincente -> SI -> FINE GIOCO
+RESET
+- cancella la griglia
+- azzero il contatore
+- svuoto l’array delle bombe
+FINE GIOCO
+- accendere tutte le bombe
+- congelo la griglia
+- stampo il messaggio finale con punteggio. Messaggio diverso se vince o perde. -->
+
